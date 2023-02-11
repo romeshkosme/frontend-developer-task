@@ -1,11 +1,7 @@
-import React from 'react'
-import user from "../assets/user.png"
+import React from "react";
+
 function PageNotFound() {
-  return (
-    <div className='text-red-500'>PageNotFound
-    <img src={user} />
-    </div>
-  )
+  return <div className="text-red-500">PageNotFound</div>;
 }
 
-export default PageNotFound
+export default PageNotFound;
