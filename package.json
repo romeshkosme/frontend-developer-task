@@ -4,7 +4,7 @@
   "description": "This is a task designed to understand the skillset of developers joining Now&Me.\r The task will be assessed on the following factors:",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --open --hot",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

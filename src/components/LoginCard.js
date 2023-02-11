@@ -67,7 +67,13 @@ function LoginCard({ isModal, setIsOpen, setModalState }) {
               </button>
             </Link>
           ) : (
-            <button className="bg-[#4A96FF] rounded-[4px] text-white text-[16px] font-[500] w-[415px] h-[43px] mt-[20px]">
+            <button
+              onClick={() => {
+                setIsOpen(false);
+                setModalState("register");
+              }}
+              className="bg-[#4A96FF] rounded-[4px] text-white text-[16px] font-[500] w-[415px] h-[43px] mt-[20px]"
+            >
               Login now
             </button>
           )}

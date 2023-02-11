@@ -67,7 +67,13 @@ function RegisterCard({ setIsOpen, setModalState }) {
               />
             </div>
           </div>
-          <button className="bg-[#4A96FF] rounded-[4px] text-white text-[16px] font-[500] w-[415px] h-[43px] mt-[20px]">
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              setModalState("register");
+            }}
+            className="bg-[#4A96FF] rounded-[4px] text-white text-[16px] font-[500] w-[415px] h-[43px] mt-[20px]"
+          >
             Continue
           </button>
           <p className="text-[#7F8084] text-[14px] font-[400] mt-[20px]">

@@ -4,10 +4,10 @@ import msg from "../assets/msg.png";
 import smiley from "../assets/smiley.png";
 import moreIcon from "../assets/more.png";
 
-function PostCard({ id, name, time, edited, post, comments }) {
+function PostCard({ id, name, time, edited, post, comments, setIsOpen }) {
   return (
     <>
-      <div className="bg-[#27292D] border-[#35373B] border-[2px] rounded-[8px] text-[#7F8084] py-[24px] px-[20px] w-[700px] mt-4 cursor-pointer">
+      <div onClick={() => setIsOpen(true)} className="bg-[#27292D] border-[#35373B] border-[2px] rounded-[8px] text-[#7F8084] py-[24px] px-[20px] w-[700px] mt-4 cursor-pointer">
         <div className="flex">
           <div>
             <img className="min-h-[44px] max-h-[44px] min-w-[44px] max-w-[44px]" src={userImg} />
