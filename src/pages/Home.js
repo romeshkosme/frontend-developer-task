@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <div className="bg-[#131319] flex justify-center items-center cursor-default">
-        <div className="text-[#C5C7CA] mt-10">
+        <div className="text-[#C5C7CA] mt-10 px-[15px] md:px-[15px]">
           {/* INTRO */}
           <div>
             <h1 className="font-[500] text-[28px]">Hello Jane</h1>

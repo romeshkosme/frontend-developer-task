@@ -8,8 +8,8 @@ function RegisterCard({ setIsOpen, setModalState }) {
   return (
     <>
       {/* card */}
-      <div className="bg-gradient-to-r p-[2px] from-[#969696] to-[#343434] rounded-[8px]">
-        <div className="rounded-[8px] bg-[#27292D] w-[463px] py-[40px] px-[24px] cursor-default">
+      <div className="bg-gradient-to-r p-[2px] w-[90%] max-w-[463px] from-[#969696] to-[#343434] rounded-[8px]">
+        <div className="rounded-[8px] bg-[#27292D] max-w-[463px] py-[40px] px-[24px] cursor-default">
           {/*  */}
           <div className="relative">
             <span
@@ -36,7 +36,7 @@ function RegisterCard({ setIsOpen, setModalState }) {
             <input
               type="text"
               placeholder="Enter your email"
-              className="border-[1.5px] border-[#35373B] rounded-[4px] bg-transparent w-[415px] h-[43px] mt-[8px] px-2 text-white focus:outline-none"
+              className="border-[1.5px] border-[#35373B] rounded-[4px] bg-transparent max-w-[415px] h-[43px] mt-[8px] px-2 text-white focus:outline-none"
             />
           </div>
           <div className="flex flex-col mt-[20px]">
@@ -46,7 +46,7 @@ function RegisterCard({ setIsOpen, setModalState }) {
             <input
               type="text"
               placeholder="Choose a preferred username"
-              className="border-[1.5px] border-[#35373B] rounded-[4px] bg-transparent w-[415px] h-[43px] mt-[8px] px-2 text-white focus:outline-none"
+              className="border-[1.5px] border-[#35373B] rounded-[4px] bg-transparent max-w-[415px] h-[43px] mt-[8px] px-2 text-white focus:outline-none"
             />
           </div>
           <div className="flex flex-col mt-[20px]">
@@ -58,11 +58,11 @@ function RegisterCard({ setIsOpen, setModalState }) {
                 type={passwordType ? "password" : "text"}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Choose a strong password"
-                className="border-[1.5px] border-[#35373B] rounded-[4px] bg-transparent w-[415px] h-[43px] mt-[8px] px-2 text-white focus:outline-none"
+                className="border-[1.5px] border-[#35373B] rounded-[4px] bg-transparent w-full [415px] h-[43px] mt-[8px] px-2 text-white focus:outline-none"
               />
               <img
                 src={showPasswordIcon}
-                className="absolute top-4 right-4 w-[30px] cursor-pointer"
+                className="absolute top-4 right-4 max-w-[30px] cursor-pointer"
                 onClick={() => setPasswordType(!passwordType)}
               />
             </div>
@@ -72,7 +72,7 @@ function RegisterCard({ setIsOpen, setModalState }) {
               setIsOpen(false);
               setModalState("register");
             }}
-            className="bg-[#4A96FF] rounded-[4px] text-white text-[16px] font-[500] w-[415px] h-[43px] mt-[20px]"
+            className="bg-[#4A96FF] rounded-[4px] text-white text-[16px] font-[500] w-full h-[43px] mt-[20px]"
           >
             Continue
           </button>
